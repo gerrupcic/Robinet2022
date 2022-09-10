@@ -213,7 +213,7 @@ button:hover{
 
   .mainShowcase img{
     filter:grayscale(100%);
-    transition: all 2s;
+    transition: all 1s;
   }
 
   .mainShowcase img:hover{
