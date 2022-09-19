@@ -24,6 +24,23 @@ ul{
 a{
     text-decoration: none;
 }
+
+:root{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+.h5, h5{
+  text-align: center;
+}
+.btn-primary{
+  background-color: #000000;
+  border-color: #000000;
+}
+:not(.btn-check)+.btn:hover{
+  background-color: rgb(32, 31, 31);
+  border-color: rgb(32, 31, 31);
+}
+
 .titulosPrincipales{
     font-family: 'Montserrat', sans-serif;
     text-align: center;
@@ -99,14 +116,14 @@ button:hover{
     justify-content: right;
 }
 .video p{
-    font-size: 50px;
+    font-size: 30px;
     font-family: 'Montserrat', sans-serif;
     position: absolute;
     text-decoration: none;
     text-align: center;
     font-weight: 600;
     color: white;
-    padding: 15%;
+    padding: 25%;
     top: 50px;
     left: 50px;
     text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
@@ -127,8 +144,12 @@ button:hover{
     display: flex;
     padding-top: 40px;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.082), white);
-    
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
 }
+
 #productosVenta .container{
     text-align: center;
     display:flex;
@@ -137,6 +158,7 @@ button:hover{
     align-content: space-between;
 
 }
+/* 
 #productosDestacados .container{
     text-align: center;
     display:flex;
@@ -144,6 +166,7 @@ button:hover{
     align-items: center;
     align-content: space-between;
 }
+ */
 .carta img{
     max-width: 300px;
     max-height: 250px;
@@ -156,10 +179,12 @@ button:hover{
     margin:auto;
     border-radius: 20px;
 }
+
 .row{
     display:flex;
     padding:5px;
 }
+
 .column{
     flex:25%;
     padding: 5px;
