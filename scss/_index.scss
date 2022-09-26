@@ -1,0 +1,68 @@
+.titulosPrincipales{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    text-decoration: none;
+    font-weight: 600;
+}
+.video{
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    margin: 1% auto;
+    display: block;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+    iframe{
+        width: 100%;
+        height: 100%;
+    }
+    p{
+        font-size: 30px;
+        font-family: 'Montserrat', sans-serif;
+        position: absolute;
+        text-decoration: none;
+        text-align: center;
+        font-weight: 600;
+        color: white;
+        padding: 25%;
+        top: 50px;
+        left: 50px;
+        text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+    }
+}
+.menu{
+    display:flex;
+    align-items: flex-end;
+    text-align: right;
+    justify-content: right;
+    justify-items: right;
+    align-content: flex-end;
+    ul li{
+        display: inline-block;
+        padding: 20px 20px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: right;
+        font-size: 20px;
+        text-decoration: none;
+        font-weight: 600;
+        text-align: right;
+        justify-content: right;
+    }
+}
+.carta img{
+    max-width: 300px;
+    max-height: 250px;
+    border-radius: 20px;
+}
+.btn-primary{
+    background-color: $colorBotones;
+    border-color: $colorBotones;
+  }
+  :not(.btn-check)+.btn:hover{
+    background-color: $colorBotonesHover;
+    border-color: $colorBotonesHover;
+  }
