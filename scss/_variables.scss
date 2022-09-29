@@ -1,2 +1,20 @@
+
+/* 
 $colorBotones:  #000000;
 $colorBotonesHover: rgb(32, 31, 31);
+*/
+
+$estilosBotones:(
+    color: #000000,
+    colorBorde: #181515,
+);
+
+$estilosBotonesHover:(
+    colorHover: #222020,
+    colorBordeHover:#222020,
+);
+    
+@mixin sizes($ancho, $alto){
+    max-width: $ancho;
+    max-height: $alto;
+}

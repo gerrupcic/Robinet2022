@@ -19,12 +19,9 @@
         height: 100%;
     }
     p{
+        @extend .titulosPrincipales;
         font-size: 30px;
-        font-family: 'Montserrat', sans-serif;
         position: absolute;
-        text-decoration: none;
-        text-align: center;
-        font-weight: 600;
         color: white;
         padding: 25%;
         top: 50px;
@@ -54,15 +51,17 @@
     }
 }
 .carta img{
-    max-width: 300px;
-    max-height: 250px;
+    @include sizes (300px,250px);
+    /*max-width: 300px;
+    max-height: 250px;*/
     border-radius: 20px;
 }
 .btn-primary{
-    background-color: $colorBotones;
-    border-color: $colorBotones;
+    background-color: map-get($estilosBotones ,color);
+    border-color: map-get($estilosBotones ,colorBorde);
   }
   :not(.btn-check)+.btn:hover{
-    background-color: $colorBotonesHover;
-    border-color: $colorBotonesHover;
+    background-color: map-get($estilosBotonesHover ,colorHover);
+    border-color: map-get($estilosBotonesHover ,colorBordeHover);
   }
+

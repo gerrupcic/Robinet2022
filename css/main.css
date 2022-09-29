@@ -26,7 +26,11 @@ a {
   justify-items: center;
   justify-content: center; }
 
-.titulosPrincipales {
+/* 
+$colorBotones:  #000000;
+$colorBotonesHover: rgb(32, 31, 31);
+*/
+.titulosPrincipales, .video p {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   font-size: 50px;
@@ -47,11 +51,7 @@ a {
     height: 100%; }
   .video p {
     font-size: 30px;
-    font-family: 'Montserrat', sans-serif;
     position: absolute;
-    text-decoration: none;
-    text-align: center;
-    font-weight: 600;
     color: white;
     padding: 25%;
     top: 50px;
@@ -81,12 +81,14 @@ a {
 .carta img {
   max-width: 300px;
   max-height: 250px;
+  /*max-width: 300px;
+    max-height: 250px;*/
   border-radius: 20px; }
 
 .btn-primary {
   background-color: #000000;
-  border-color: #000000; }
+  border-color: #181515; }
 
 :not(.btn-check) + .btn:hover {
-  background-color: #201f1f;
-  border-color: #201f1f; }
+  background-color: #222020;
+  border-color: #222020; }
