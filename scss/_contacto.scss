@@ -1,0 +1,7 @@
+/* No se necesitó usar este partial, pero lo dejo ya creado para un futuro hacer cambios de ser necesario */
+.btn-primary {
+    --bs-btn-hover-bg: map-get($estilosBotonesHover ,colorHover);
+    --bs-btn-hover-border-color: map-get($estilosBotonesHover ,colorBordeHover);
+    --bs-btn-active-color: map-get($estilosBotonesHover ,colorHover);
+    --bs-btn-hover-color: map-get($estilosBotonesHover ,colorHover);
+}

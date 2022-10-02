@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 62.5%;
   height: 100%; }
@@ -26,10 +27,6 @@ a {
   justify-items: center;
   justify-content: center; }
 
-/* 
-$colorBotones:  #000000;
-$colorBotonesHover: rgb(32, 31, 31);
-*/
 .titulosPrincipales, .video p {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
@@ -37,6 +34,23 @@ $colorBotonesHover: rgb(32, 31, 31);
   text-decoration: none;
   font-weight: 600; }
 
+.titulosSecundarios {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 27px;
+  text-decoration: none;
+  font-weight: 500; }
+
+.parrafos {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  text-decoration: none;
+  font-weight: 300; }
+
+/* 
+$colorBotones:  #000000;
+$colorBotonesHover: rgb(32, 31, 31);
+*/
 .video {
   width: 500px;
   height: 300px;
@@ -92,3 +106,35 @@ $colorBotonesHover: rgb(32, 31, 31);
 :not(.btn-check) + .btn:hover {
   background-color: #222020;
   border-color: #222020; }
+
+.sobreNosotros img {
+  max-width: 1000px;
+  max-height: 700px;
+  display: flex;
+  margin: auto;
+  border-radius: 20px; }
+
+/* No se necesitó usar este partial, pero lo dejo ya creado para un futuro hacer cambios de ser necesario */
+.mainShowcase img {
+  filter: grayscale(100%);
+  transition: all 1s; }
+  .mainShowcase img:hover {
+    filter: none; }
+
+.row {
+  display: flex;
+  padding: 5px; }
+
+.column {
+  flex: 25%;
+  padding: 5px; }
+  .column img {
+    margin-top: 5px;
+    width: 100%; }
+
+/* No se necesitó usar este partial, pero lo dejo ya creado para un futuro hacer cambios de ser necesario */
+.btn-primary {
+  --bs-btn-hover-bg: map-get($estilosBotonesHover ,colorHover);
+  --bs-btn-hover-border-color: map-get($estilosBotonesHover ,colorBordeHover);
+  --bs-btn-active-color: map-get($estilosBotonesHover ,colorHover);
+  --bs-btn-hover-color: map-get($estilosBotonesHover ,colorHover); }
